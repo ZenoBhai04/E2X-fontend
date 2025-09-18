@@ -85,18 +85,12 @@ const BenefitsSection: React.FC = () => {
               viewport={{ once: true }}
               whileHover={{ y: -10, scale: 1.02 }}
               className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:bg-white/15 transition-all duration-300 border border-white/10"
-              style={{
-                boxShadow: 'inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 10px 30px rgba(0, 0, 0, 0.2)',
-              }}
             >
               <div className="flex items-center mb-4">
                 <motion.div 
                   whileHover={{ rotate: 360, scale: 1.1 }}
                   transition={{ duration: 0.6 }}
-                  className="p-3 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full shadow-lg drop-shadow-xl"
-                  style={{
-                    boxShadow: '0 10px 25px rgba(251, 191, 36, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2)',
-                  }}
+                  className="p-3 bg-gradient-to-br from-amber-400 to-amber-600 rounded-full shadow-lg"
                 >
                   <benefit.icon className="w-6 h-6 text-white" />
                 </motion.div>

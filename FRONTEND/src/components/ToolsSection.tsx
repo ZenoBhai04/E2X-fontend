@@ -120,8 +120,6 @@ const ToolsSection: React.FC = () => {
                   <motion.div 
                     className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"
                   />
-                  {/* Enhanced shadow effect */}
-                  <div className="absolute inset-0 group-hover:shadow-inner transition-shadow duration-300" />
                   <div className="relative p-6 flex items-center justify-between text-white">
                     <div>
                       <h3 className="text-2xl font-bold">{tool.title}</h3>
@@ -130,7 +128,6 @@ const ToolsSection: React.FC = () => {
                     <motion.div
                       whileHover={{ rotate: 360, scale: 1.1 }}
                       transition={{ duration: 0.6 }}
-                      className="drop-shadow-lg"
                     >
                       <tool.icon className="w-12 h-12 opacity-80" />
                     </motion.div>

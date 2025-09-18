@@ -92,10 +92,7 @@ const ImpactSection: React.FC = () => {
                 <motion.div 
                   whileHover={{ rotate: 360 }}
                   transition={{ duration: 0.6 }}
-                  className={`w-20 h-20 mx-auto rounded-full bg-gradient-to-r ${impact.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg drop-shadow-2xl`}
-                  style={{
-                    boxShadow: '0 15px 35px rgba(0, 0, 0, 0.2), inset 0 2px 0 rgba(255, 255, 255, 0.2)',
-                  }}
+                  className={`w-20 h-20 mx-auto rounded-full bg-gradient-to-r ${impact.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
                 >
                   <impact.icon className="w-10 h-10 text-white" />
                 </motion.div>

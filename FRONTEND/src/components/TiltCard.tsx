@@ -55,7 +55,6 @@ const TiltCard: React.FC<TiltCardProps> = ({
       className={`transform-gpu ${className}`}
       style={{
         transformStyle: 'preserve-3d',
-        filter: isHovered ? 'drop-shadow(0 25px 50px rgba(0, 0, 0, 0.25))' : 'drop-shadow(0 10px 25px rgba(0, 0, 0, 0.1))',
       }}
       animate={{
         rotateX,
@@ -76,9 +75,6 @@ const TiltCard: React.FC<TiltCardProps> = ({
         style={{
           transform: `translateZ(${isHovered ? '20px' : '0px'})`,
           transition: 'transform 0.3s ease-out',
-          boxShadow: isHovered 
-            ? '0 0 80px rgba(251, 191, 36, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.1)' 
-            : '0 0 0 rgba(0, 0, 0, 0)',
         }}
       >
         {children}
